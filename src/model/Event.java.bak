@@ -1,0 +1,95 @@
+package model;
+/**
+	* Descripción:
+	* <b> pos:</b> String type, String organizer, Double price, String description.
+	*/
+public class Event{
+	private String type;
+	private String organizer;
+	private Double price;
+	private String description;
+	
+}
+/**
+	* Descripción: Registra el evento propuesto</br>
+	* <b> pos:</b> String type, String organizer, Double price, String description.
+	*/
+public Event(String type, String organizer, Double price, String description){
+	
+}
+/**
+	* Descripción: Registra el tipo propuesto</br>
+	* <b> pos:</b> String type.
+	*/
+public void Settype(String type){
+	
+	this.type = type;
+	
+}
+/**
+	* Descripción: Muestra el tipo propuesto </br>
+	* <b> pos:</b> String type.
+	* @return <type> <String> Devuelve para mostrar el tipo
+	*/
+public String Gettype(){
+	
+	return type;
+	
+}
+/**
+	* Descripción: Registra la organización</br>
+	* <b> pos:</b> String organizer.
+	*/
+public void Setorganizer(String organizer){
+	
+	this.organizer = organizer;
+	
+}
+/**
+	* Descripción: Muestra el tipo de organizacion propuesto </br>
+	* <b> pos:</b> String organizer.
+	* @return <organizer> <String> Devuelve para mostrar el tipo de organizacion.
+	*/
+public String Getorganizer(){
+	
+	return organizer;
+	
+}
+/**
+	* Descripción: Registra el costo del evento</br>
+	* <b> pos:</b> Double price.
+	*/
+public void Setprice(Double price){
+	
+	this.price = price;
+	
+}
+/**
+	* Descripción: Muestra el precio propuesto </br>
+	* <b> pos:</b> Double price.
+	* @return <price> <Double> Devuelve para mostrar el costo
+	*/
+public Double Getprice(){
+	
+	return price;
+	
+}
+/**
+	* Descripción: Registra la descripcion del evento</br>
+	* <b> pos:</b> String  description.
+	*/
+public void Setdescription(String description){
+	
+	this.description = description;
+	
+}
+/**
+	* Descripción: Muestra la descripcion propuesta </br>
+	* <b> pos:</b> String description.
+	* @return <description> <String> Devuelve para mostrar la descripcion
+	*/
+public String Getdescription(){
+	
+	return description;
+	
+}
