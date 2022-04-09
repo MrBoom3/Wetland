@@ -11,4 +11,3 @@ public class Dagma{
 	private String wetlandwherespeciels;
 	
 }
-	System.out.println(toString)
