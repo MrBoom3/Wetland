@@ -19,7 +19,7 @@ public class Wetland{
 	*/
 public Wetland (String name, String ubication, String size, String type, String photourl, String protectedstatus, String zonename, String zonetype){
 	
-	//Come
+	
 	
 }
  /**
