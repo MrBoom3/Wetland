@@ -134,7 +134,13 @@ public class Integrative2{
    
   }
   public static void flora(){
-	  Wetland<flora= new flora
+	  Wetland<flora= new flora;
+	  
+  }
+  public static void speciewetland(){
+	  System.out.printl("Which species do you want to look for in the wetlands?")
+	  species==Wetland;
+	  Wetland= new Wetland1;
 	  
 	  
 	  

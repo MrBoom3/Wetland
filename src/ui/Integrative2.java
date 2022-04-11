@@ -124,7 +124,7 @@ public class Integrative2{
 
     System.out.println("Put (9) to close");
 
-
+dddd
     option=reader.nextInt();
     return option;
   }
