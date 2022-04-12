@@ -106,11 +106,11 @@ public String Getmigratorystatus(){
 	* Descripción: Register the proposed type</br>
 	* <b> pos:</b> String type.
 	*/
-	public void Settype(String type){
+public void Settype(String type){
 	
 	this.type = type;
 	
-	}
+}
 /**
 	* Descripción: Shows the proposed type </br>
 	* <b> pos:</b> String type.

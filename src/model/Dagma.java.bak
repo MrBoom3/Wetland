@@ -1,0 +1,34 @@
+package model;
+/**
+	* Descripción:
+	* <b> pos:</b> String Resisterwetland, String Registerspecie, String leastpopulatedwetland, String mostpopulatedwetland, String wetlandwherespeciels.
+	*/
+public class Dagma{
+	private  String Resisterwetland;
+	private String Registerspecie;
+	private String leastpopulatedwetland;
+	private String mostpopulatedwetland;
+	private String wetlandwherespeciels;
+	
+	
+	public String addWetland(String name, String ubication, String photourl, boolean type, boolean type, boolean protectedstatus, double size, Date date){
+        
+        boolean continius1=true;
+        String dispatch1="Wetland with a successful registration";
+
+        for( int i=0; (i<MAXWETLANDS) && continuis1; i++){
+            if(wetland[i]==null){
+                wetland[i]=new Wetland(name, ubication, photourl, type, type, protectedstatus, size);
+                continius1=false;
+            }
+        }
+        return dispatch1;
+    }
+	
+	
+	
+	
+	
+	
+	
+}

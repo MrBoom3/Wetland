@@ -4,22 +4,17 @@ package model;
 	* <b> pos:</b> String type, String organizer, Double price, String description.
 	*/
 public class Event{
-	
-	enum EventType{
-        
-    MAINTENANCES, SCHOOLVISITS, IMPROVEMENT, CELEBRATIONS;
-}
-	
 	private String type;
 	private String organizer;
 	private Double price;
 	private String description;
-	private EventType eventType;
-	public Event(String organizer, int type, String price){
+	
+	public Event(String EO, int ET, String EP, String EW){
 
-      this.eventOrganizer = organizer;
-      this.eventPrice = price;
-      switch (type) 
+      this.eventOrganizer = EO;
+      this.eventPrice = EP;
+      this.eventWetland = EW;
+      switch (ET) 
       {
         case 1:  this.eventType=EventType.MAINTENANCES;
                 break;

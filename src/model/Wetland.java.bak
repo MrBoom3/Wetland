@@ -4,6 +4,12 @@ package model;
 	* <b> pos:</b> String name, String ubication, String size, String type, String photourl, String String protectedstatus, String zonename, String zonetype.
 	*/
 public class Wetland{
+	
+	public static final int MAXSPECIES=9999;
+    public static final int MAXEVENTS=9999;
+    public static final int MAXWETLANDS=80;
+
+	
 	private String name;
 	private String ubication;
 	private String size;
@@ -12,14 +18,42 @@ public class Wetland{
 	private String protectedstatus;
 	private String zonename;
 	private String zonetype;
-}
+	  
+	private Species[] wetlandSpecies;
+    private Event[] wetlandEvent;
+
+
+	public String registerSpecies(String name, String scientificname, int type, boolean migratorystatus){
+        boolean continius1 = true;
+        String distach1="Species successfully registered";
+
+        for(int i=0; (i<MAXSPECIES) && continius1; i++){
+            if (wetlandSpecies[i]==null){
+                wetlandSpecies[i]=new Species(name,scientificname,type,migratorystatus);
+                continius1=false;
+            }
+        }
+        return distach1;
+    }
+	public String registerEvents(String organizer, int type, String price){
+        boolean continius2 = true;
+        String distach2 = "Event successfully registered";
+
+        for(int i=0; (i<MAXEVENTS) && continius2; i++){
+            if (wetlandEvent[i]==null){
+                wetlandEvent[i]=new Event(organizer, type, price);
+                continius2=false;
+            }
+        }
+        return distach2;
+    }
 /**
 	* Descripción: Register the wetland</br>
 	* <b> pos:</b> String name, String ubication, String size, String type, String photourl, String protectedstatus, String zonename, String zonetype.
 	*/
 public Wetland (String name, String ubication, String size, String type, String photourl, String protectedstatus, String zonename, String zonetype){
 	
-	//Come
+	
 	
 }
  /**
@@ -174,4 +208,36 @@ public String Getzonetype(){
 	
 	return zonetype;
 	
+}
+
+	public String toString(){
+
+        String answerPrivateWetland;
+        if(type==true){
+            answerPrivateWetland=("Private");
+        }else{
+            answerPrivateWetland=("Public");
+        }
+
+        String answerRuralWetland;
+        if(wetlandRural==true){
+            answerRuralWetland=("Rural");
+        }else{
+            answerRuralWetland=("Urban");
+        }
+
+        String protectedArea;
+        if(wetlandProtectedArea==true){
+            protectedArea=("ProtectedArea");
+        }else{
+            protectedArea=("UnprotectedArea");
+        }
+        return "wetland name: " + name 
+        + "\nwetland location: " + ubication
+        + "\nwetland url: " + photourl
+        + "\nwetland private or public: " + answerPrivateWetland
+        + "\nwetland rural or urban: " + answerRuralWetland
+        + "\nwetland protected area: " + protectedstatus
+        + "\nwetland wetland area: " + size;
+    }
 }
